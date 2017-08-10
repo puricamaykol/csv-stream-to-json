@@ -6,7 +6,7 @@ CSV File Stream To JSON
 Takes a CSV file stream and parse it line by line to JSON. It accepts two callbacks: 1. Called for each file line, 2. Called at the end of the file parsing and gets passed the whole json array.
  
 
-CSV file stream to JSON
+How to install
 --------------
 
 ```batch
