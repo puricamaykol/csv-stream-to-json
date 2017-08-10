@@ -1,6 +1,6 @@
  
 
-Node Instapago
+CSV File Stream To JSON
 --------------
 
 Takes a CSV file stream and parse it line by line to JSON. It accepts two callbacks: 1. Called for each file line, 2. Called at the end of the file parsing and gets passed the whole json array.
@@ -31,10 +31,13 @@ How to use it
 
 
 ```javascript
-  csvToJson.parse(readable, ",", false, obj => {
+  //Creating read stream from file uploaded to server
+  var readable = req.file('avatar').read();
+
+    csvToJson.parse(readable, ",", false, obj => {
        console.log(obj);
     }, arr => {
-        //console.log(arr);
+        console.log(arr);
     });
 ```
 
