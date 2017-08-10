@@ -32,7 +32,7 @@ How to use it
 
 ```javascript
   //Creating read stream from file uploaded to server
-  var readable = req.file('avatar').read();
+  var readable = req.file('csvsample').read();
 
     csvToJson.parse(readable, ",", false, obj => {
        console.log(obj);
